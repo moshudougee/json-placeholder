@@ -1,0 +1,323 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  @apply fixed top-0 bg-slate-950 h-[60px] w-screen left-1 right-1 rounded-md
+}
+
+.nav-main {
+  @apply flex mx-5 my-2 w-full
+}
+
+.nav-logo {
+  @apply flex py-2 w-1/2;
+}
+
+.nav-logo-link {
+  @apply text-2xl text-slate-400 font-semibold
+}
+
+.nav-menu {
+  @apply flex gap-8 py-2 w-1/2
+}
+
+.nav-menu-link {
+  @apply text-xl text-slate-200 hover:text-slate-600
+}
+
+.display {
+  @apply flex flex-col w-full gap-2 
+}
+
+.home {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 min-w-[800px] p-10 justify-center text-xl
+}
+
+.home-title {
+  @apply flex w-full h-[80px]
+}
+
+.home-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.home-body {
+  @apply flex w-full h-[60px]
+}
+
+.home-body-item {
+  @apply flex w-1/3 justify-center items-center
+}
+
+.home-body-link {
+  @apply flex w-1/3 rounded-md bg-cyan-800 justify-center items-center text-slate-400;
+  @apply hover:bg-cyan-500 hover:text-slate-700;
+}
+
+.posts {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 min-w-[1100px] p-10 justify-center text-xl
+}
+
+.posts-title {
+  @apply flex w-full h-[80px]
+}
+
+.posts-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.posts-body {
+  @apply flex w-full h-[80px] p-3 border-b 
+}
+
+.posts-body-header {
+  @apply flex w-full h-[80px] p-3  bg-slate-900 text-slate-500
+}
+
+.posts-body-item {
+  @apply flex w-2/3 justify-center items-center
+}
+
+.posts-body-link {
+  @apply flex w-1/3 rounded-md bg-cyan-800 justify-center items-center text-slate-400;
+  @apply hover:bg-cyan-500 hover:text-slate-700;
+}
+
+.pagination {
+  @apply flex justify-center list-none p-0
+}
+
+.page-item {
+  @apply mx-5;
+}
+
+.page-link {
+  @apply py-2 px-4 bg-[#007bff] text-white border-4 cursor-pointer hover:bg-[#0056b3];
+}
+
+.users {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 min-w-[1100px] p-10 justify-center text-xl
+}
+
+.users-title {
+  @apply flex w-full h-[80px]
+}
+
+.users-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.users-body {
+  @apply flex w-full h-[80px] p-3 border-b 
+}
+
+.users-body-header {
+  @apply flex w-full h-[80px] p-3  bg-slate-900 text-slate-500
+}
+
+.users-body-item {
+  @apply flex w-1/3 justify-center items-center
+}
+
+.users-body-link {
+  @apply flex w-1/3 rounded-md bg-cyan-800 justify-center items-center text-slate-400;
+  @apply hover:bg-cyan-500 hover:text-slate-700;
+}
+
+.post {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[600px] p-10 justify-center text-xl mx-10
+}
+
+.post-title {
+  @apply flex w-full font-semibold p-4
+}
+
+.post-title-item {
+  @apply flex leading-5
+}
+
+.post-body {
+  @apply flex w-full p-4
+}
+
+.post-body-item {
+  @apply flex leading-5 text-slate-500
+}
+
+.post-footer {
+  @apply flex w-full p-4 gap-4
+}
+
+.post-footer-item {
+  @apply flex w-1/2 text-base text-slate-800
+}
+
+.post-footer-link {
+  @apply flex w-1/2 text-base text-slate-400 bg-green-900 justify-center items-center h-[45px];
+  @apply rounded-md hover:text-green-900 hover:bg-slate-400
+}
+
+.user {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[600px] p-10 justify-center text-xl mx-10
+}
+
+.user-body {
+  @apply flex w-full p-4
+}
+
+.user-body-item {
+  @apply flex w-1/2 leading-5 text-slate-500
+}
+
+.user-footer {
+  @apply flex w-full p-4 gap-4 text-nowrap
+}
+
+.user-footer-link {
+  @apply flex w-1/3 text-base text-slate-400 bg-green-900 justify-center items-center h-[45px];
+  @apply rounded-md hover:text-green-900 hover:bg-slate-400
+}
+
+.comments {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[800px] p-10 justify-center text-xl
+}
+
+.comments-title {
+  @apply flex w-full h-[80px]
+}
+
+.comments-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.comments-body {
+  @apply flex flex-col w-full p-3 border-b 
+}
+
+.comments-body-title {
+  @apply flex w-full p-3 font-semibold
+}
+
+.comments-body-email {
+  @apply flex w-full justify-start items-center text-amber-800
+}
+
+.comments-body-item {
+  @apply flex w-full justify-start items-center text-slate-600 leading-5
+}
+
+.todos {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 w-[600px] h-screen p-10 justify-center text-xl
+}
+
+.todos-title {
+  @apply flex w-full h-[80px]
+}
+
+.todos-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.todos-body {
+  @apply flex w-full  p-3 border-b 
+}
+
+.todos-body-header {
+  @apply flex w-full h-[80px] p-3  bg-slate-900 text-slate-500
+}
+
+.todos-body-item {
+  @apply flex w-2/3 justify-start items-center text-slate-600 leading-5 px-2
+}
+
+.userposts {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[800px] p-10 justify-center text-xl
+}
+
+.userposts-title {
+  @apply flex w-full h-[80px]
+}
+
+.userposts-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.userposts-body {
+  @apply flex flex-col w-full p-3 border-b 
+}
+
+.userposts-body-title {
+  @apply flex w-full p-3 font-semibold
+}
+
+.userposts-body-item {
+  @apply flex w-full justify-start items-center text-slate-600 leading-5
+}
+
+.userposts-body-link {
+  @apply flex w-[120px] text-base text-slate-400 bg-green-900 justify-center items-center h-[45px];
+  @apply rounded-md hover:text-green-900 hover:bg-slate-400
+}
+
+.albums {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[800px] p-10 justify-center text-xl
+}
+
+.albums-title {
+  @apply flex w-full h-[80px]
+}
+
+.albums-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.albums-body {
+  @apply flex flex-col w-full p-3 border-b gap-1 
+}
+
+.albums-body-item {
+  @apply flex w-full justify-start items-center text-slate-600 leading-5
+}
+
+.albums-body-link {
+  @apply flex w-[120px] text-base text-slate-400 bg-green-900 justify-center items-center h-[45px];
+  @apply rounded-md hover:text-green-900 hover:bg-slate-400
+}
+
+.photos {
+  @apply flex flex-col gap-1 rounded shadow-md mt-10 max-w-[800px] p-10 justify-center text-xl
+}
+
+.photos-title {
+  @apply flex w-full h-[80px]
+}
+
+.photos-title-header {
+  @apply text-slate-950 font-semibold
+}
+
+.photos-body {
+  @apply flex flex-col w-full p-3 border-b gap-1 
+}
+
+.photos-grid {
+  @apply flex flex-wrap w-full gap-2
+}
+
+.photos-grid-image {
+  @apply flex w-[200px] h-[200px] shadow-md rounded-md hover:cursor-pointer
+}
+
+.photos-grid-image:hover .photos-grid-image-title {
+  @apply opacity-100 visible
+}
+
+.photos-grid-image-title {
+  @apply absolute bg-slate-900 text-slate-500 h-[70px] w-[250px] p-1 justify-center items-center rounded-md mt-10;
+  @apply invisible opacity-0;
+}
+
+.photos-body-item {
+  @apply flex w-full justify-start items-center text-slate-600 leading-5
+}
